@@ -11,30 +11,31 @@ public class BonusPart {
         System.out.println("Enter the string: ");
         String str = input.nextLine();
 
-        char[] charactersInString = str.toUpperCase().toCharArray();
-        System.out.println(charactersInString);
+        String replaceNumAlpha = str.replaceAll("[^a-zA-Z]","");
+        //System.out.println(replaceNumAlpha);
+        char[] charactersInString = replaceNumAlpha.toUpperCase().toCharArray();
+        //System.out.println(charactersInString);
 
-        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+       // String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         HashMap<Character, Integer> characters = new HashMap<>();
 
-        for(char i : charactersInString){
-            System.out.println(i);
-            if(alphabet.indexOf(i) >= 0) {
-                if (characters.containsKey(i)) {
-                    characters.put(i, characters.get(i) + 1);
+        for(char c : charactersInString){
+           // System.out.println(c);
+       //    if(alphabet.indexOf(c) >= 0) {
+            if (characters.containsKey(c)) {
+                    characters.put(c, characters.get(c) + 1);
                 } else {
-                    characters.put(i, 1);
+                    characters.put(c, 1);
                 }
             }
-        }
+      //  }
 
-        System.out.println(characters);
+       // System.out.println(characters);
 
         for(Map.Entry<Character, Integer> character : characters.entrySet()) {
             System.out.println(character.getKey() + ":" + character.getValue());
         }
         input.close();
-
     }
 }

@@ -1,4 +1,3 @@
-;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -48,6 +47,7 @@ public class ArrayListPractice {
         String arr = "Hi,Hello,Love,snowy";
         String[] wordListNew = arr.split(",");
         ArrayList<String> wordList = new ArrayList<>(Arrays.asList(wordListNew));
+
 
         System.out.println(sumEven(arrList));
         word(wordList);

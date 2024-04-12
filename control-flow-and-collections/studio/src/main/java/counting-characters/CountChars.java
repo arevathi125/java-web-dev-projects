@@ -12,12 +12,12 @@ public class CountChars {
 
         HashMap<Character, Integer> characters = new HashMap<>();
 
-        for(char i : charactersInString){
-            if(characters.containsKey(i)){
-                characters.put(i,characters.get(i) + 1);
+        for(char character : charactersInString){
+            if(characters.containsKey(character)){
+                characters.put(character,characters.get(character) + 1);
             }
             else{
-                characters.put(i, 1);
+                characters.put(character, 1);
             }
         }
 

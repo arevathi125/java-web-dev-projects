@@ -1,10 +1,11 @@
-package org.launchcode;
+
+package launchcode;
 
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Menu {
-    private Date lastUpdated;
+    private LocalDate lastUpdated;
     private ArrayList<MenuItem> items;
 
     public Menu(Date d, ArrayList<MenuItem> i) {

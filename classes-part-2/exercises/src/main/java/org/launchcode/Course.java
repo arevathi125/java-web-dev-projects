@@ -1,11 +1,11 @@
-package org.launchcode;
+//package org.launchcode;
 
 import java.util.ArrayList;
 
 public class Course {
     private String topic;
     private Teacher instructor;
-    private ArrayList<Student> enrolledStudents;
+    private ArrayList<Student1> enrolledStudents;
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather than
     //  just the class fields.

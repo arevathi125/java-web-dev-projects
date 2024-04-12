@@ -12,7 +12,7 @@ public class SuperBonusPart {
             File file = new File("control-flow-and-collections/studio/src/main/java/counting-characters/string");
            // String file = "counting-characters/string.txt";
             Scanner input = new Scanner(file);
-           //  Content Root
+           //  Content Root Path
             //  Scanner input = new Scanner(new File("control-flow-and-collections/studio/src/main/java/counting-characters/string"));
             // Absolute Path
           //  Scanner input = new Scanner(new File("C:/Users/areva/Desktop/java-web-dev-projects/control-flow-and-collections/studio/src/main/java/counting-characters/string"));
