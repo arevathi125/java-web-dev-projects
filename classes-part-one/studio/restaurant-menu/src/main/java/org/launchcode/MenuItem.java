@@ -76,6 +76,6 @@ public class MenuItem {
             return false;
         }
         MenuItem item = (MenuItem) toBeCompared;
-        return item.getCategory() == getCategory() && item.getName() == item.getName();
+        return item.getCategory() == getCategory() && item.getName() == getName();
     }
 }
